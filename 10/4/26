@@ -1,0 +1,160 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP1/My4flTs2mCdIF43fSfH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/palombarini1207/auladeP.A/blob/main/10/4/26\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Criar um programa para saber se o numero é par ou ímpar\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "HydGP9k87djg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GBsMfi3v7bVX",
+        "outputId": "f0af035e-b98e-4541-9b37-13a9b15f8073"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 67\n",
+            " o numero 67 é impar\n"
+          ]
+        }
+      ],
+      "source": [
+        "# escrever um programa para saber se o númnero é par ou ímpar\n",
+        "\n",
+        "#Entrada\n",
+        "numero = int ( input(\"digite um numero: \"))\n",
+        "\n",
+        "# processamento ? saida\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "\n",
+        "  print (f\" o numero {numero} é par\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\" o numero {numero} é impar\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Escrever um programa que verifica a nota dos 4 bimestres, calcula a media dp aluno.\n",
+        "# Não permitir que o usuário digite notas menores que 0 ou mar=iores que 10\n",
+        "# Média menor que 5 - reprovado\n",
+        "# média maior que 5 e menor que 7 -recuperação\n",
+        "# Média maior ou igualo a 7 -aprovado\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Sm_QLtG6B6nh"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota1 = float (input (\"Digite sua nota aqui: \"))\n",
+        "\n",
+        "if nota1 < 0 or nota1 > 10:\n",
+        "  print (\"nota inválida, digite uma nota de 0 a 10. \")\n",
+        "  nota1 = float (input (\"Digite sua nota aqui: \"))\n",
+        "\n",
+        "nota2 = float (input (\"Digite sua nota aqui: \"))\n",
+        "if nota1 < 0 or nota2 > 10:\n",
+        "  print (\"nota inválida, digite uma nota de 0 a 10. \")\n",
+        "  nota1 = float (input (\"Digite sua nota aqui: \"))\n",
+        "\n",
+        "\n",
+        "nota3 = float (input (\"Digite sua nota aqui: \"))\n",
+        "if nota1 < 0 or nota3 > 10:\n",
+        "  print (\"nota inválida, digite uma nota de 0 a 10. \")\n",
+        "  nota1 = float (input (\"Digite sua nota aqui: \"))\n",
+        "\n",
+        "\n",
+        "nota4 = float (input (\"Digite sua nota aqui: \"))\n",
+        "if nota1 < 0 or nota4 > 10:\n",
+        "  print (\"nota inválida, digite uma nota de 0 a 10. \")\n",
+        "  nota1 = float (input (\"Digite sua nota aqui: \"))\n",
+        "\n",
+        "\n",
+        "media = (nota1 + nota2 + nota3 + nota4)/4\n",
+        "if media < 5:\n",
+        "  print (f\"Você foi reprovado, sua média é: {media}\")\n",
+        "\n",
+        "elif media <= 7:\n",
+        "  print (f\"Você está de recuperação, sua média é: {media}\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"você está aprovado, sua média é: {media}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RshnMed2AuvP",
+        "outputId": "d65cada6-b899-45a6-f83e-34b45a597543"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua nota aqui: 6\n",
+            "Digite sua nota aqui: 7\n",
+            "Digite sua nota aqui: 8\n",
+            "Digite sua nota aqui: 9\n",
+            "você está aprovado, sua média é: 7.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "oRDm-kgaAG_0"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
