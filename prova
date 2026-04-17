@@ -1,0 +1,425 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOk8hMhCoGJBvOGWqNo5l+3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/palombarini1207/auladeP.A/blob/main/prova\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YQoRXx6Q_J9e",
+        "outputId": "3460ec55-bf8a-4627-fdbe-0f337e575366"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 67\n",
+            " o numero 67 é impar\n"
+          ]
+        }
+      ],
+      "source": [
+        "#1.Par ou ímpar\n",
+        "#Peça um número ao usuário e diga se ele é par ou ímpar\n",
+        "\n",
+        "numero = int(input(\"digite um numero: \"))\n",
+        "num = numero % 2\n",
+        "if num == 0:\n",
+        "  print(f\"o numero {numero} é par\")\n",
+        "else:\n",
+        "  print(f\" o numero {numero} é impar\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #2 Maior de dois números\n",
+        "# Solicite dois números e mostre qual é o maior (ou se são iguais).\n",
+        "# Entrada\n",
+        "a = int(input(\"digite um numero: \"))\n",
+        "b = int(input(\"digite outro numero: \"))\n",
+        "# Processamento e saída\n",
+        "if a > b:\n",
+        "  print(f\"{a} é maior que {b}\")\n",
+        "elif a == b:\n",
+        "  print(f\"{a} é igual a {b}\")\n",
+        "else:\n",
+        "  print(f\"{b} é maior que {a}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "djvSLqHmADdf",
+        "outputId": "575dbf51-790f-4605-f0d9-42d5bf20731c"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero: 123\n",
+            "digite outro numero: 67\n",
+            "123 é maior que 67\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3.Aprovação de aluno\n",
+        "#Peça a nota de um aluno e informe:\n",
+        "#Aprovado (nota ≥ 7)\n",
+        "#Recuperação (5 ≤ nota < 7)\n",
+        "#Reprovado (nota < 5)\n",
+        "nome = str(input(\" qual o nome do aluno?: \"))\n",
+        "n1 = float(input(\" qual sua nota do Primeiro bimestre? \"))\n",
+        "if n1 > 10:\n",
+        "  print(\" digite uma nota valida  (de 0 a 10)\")\n",
+        "n2 = float(input(\" qual sua nota do Segundo bimestre? \"))\n",
+        "if n2 > 10:\n",
+        "  print(\" digite uma nota valida  (de 0 a 10)\")\n",
+        "n3 = float(input(\" qual sua nota do Terceiro bimestre? \"))\n",
+        "if n3 > 10:\n",
+        "  print(\" digite uma nota valida  (de 0 a 10)\")\n",
+        "n4 = float(input(\" qual sua nota do Quarto bimestre? \"))\n",
+        "if n4 > 10:\n",
+        "  print(\" digite uma nota valida  (de 0 a 10)\")\n",
+        "nf = n1 + n2 + n3 + n4\n",
+        "nb = nf / 4\n",
+        "if n1 > 10 or n2 > 10 or n3 > 10 or n4 > 10:\n",
+        "  print(\"digite notas validas (0 a 10)\")\n",
+        "elif nb >= 7:\n",
+        "  print(f\"o aluno {nome}  tirou {nb}  e foi aprovado\")\n",
+        "elif nb >= 5:\n",
+        "    print(f\"o aluno {nome} tirou {nb} e ficou de recuperação\")\n",
+        "else:\n",
+        "    print(f\" o aluno {nome} tirou {nb} e foi reprovado \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cLNuYCbNAtbc",
+        "outputId": "233bba5e-29a9-4e6a-8f4d-fa18eb02318c"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " qual o nome do aluno?: Six Seven da Silva\n",
+            " qual sua nota do Primeiro bimestre? 8\n",
+            " qual sua nota do Segundo bimestre? 9\n",
+            " qual sua nota do Terceiro bimestre? 10\n",
+            " qual sua nota do Quarto bimestre? 10\n",
+            "o aluno Six Seven da Silva  tirou 9.25  e foi aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4.Classificação de idade\n",
+        "#Receba a idade e classifique:\n",
+        "#Criança (0–12)\n",
+        "#Adolescente (13–17)\n",
+        "#Adulto (18–59)\n",
+        "#Idoso (60+)\n",
+        "idade = int(input(\"digite sua idade\"))\n",
+        "if idade <= 12:\n",
+        "  print(\"você é uma criança\")\n",
+        "elif idade >= 13 and idade <= 17:\n",
+        "  print(\"você é um adolecente\")\n",
+        "elif idade >= 18 and idade <= 59:\n",
+        "  print(\"você é um adulto\")\n",
+        "else:\n",
+        "  print(\"você é um idoso\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KF3ChtPRKxdw",
+        "outputId": "0c5ff79c-8d57-4b25-e821-8a178ade5a84"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite sua idade67\n",
+            "você é um idoso\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #5.Senha correta\n",
+        "#Defina uma senha fixa no código. Peça ao usuário para digitar e informe se está correta ou incorreta.\n",
+        "\n",
+        "senh = int (input(\"qual sua senha? \"))\n",
+        "senha = 677\n",
+        "if senh == senha:\n",
+        "  print(\" acesso permitido bem vindo playboyzinho\")\n",
+        "else:\n",
+        "  print(\"acesso negado vaza daqui safado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rHLnmcmNE-HC",
+        "outputId": "48e3c3e1-a2f7-4bf4-eccb-4fd92a61f032"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "qual sua senha? 677\n",
+            " acesso permitido bem vindo playboyzinho\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6.Positivo, negativo ou zero\n",
+        "#Peça um número e diga se ele é positivo, negativo ou zero.\n",
+        "nu = float(input(\"digite um numero\"))\n",
+        "if nu > 0:\n",
+        "  print(f\"o numero {nu} é positivo\")\n",
+        "elif nu == 0:\n",
+        "    print(f\"o numero {nu} é igual a zero\")\n",
+        "else:\n",
+        "    print(f\"o numero {nu} é negativo\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x2TLyvyCFhqd",
+        "outputId": "3ace12ca-7595-4fc0-9279-ffb354ee53c5"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero67\n",
+            "o numero 67.0 é positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#7 Calculadora simples\n",
+        "#Peça dois números e uma operação (+, -, *, /). Use if/elif para calcular o resultado.\n",
+        "print(\"|----------CALCULADORA----------|\")\n",
+        "print(\"|                               |\")\n",
+        "print(\"|----------MENU-----------------|\")\n",
+        "print(\"|                                |\")\n",
+        "print(\"opção = 1 - soma                |\")\n",
+        "print(\"opção = 2 - subtração           |\")\n",
+        "print(\"opção = 3 - multiplicação       |\")\n",
+        "print(\"opção = 4 - divisão             |\")\n",
+        "print(\"--------------------------------|\")\n",
+        "\n",
+        "a = int(input(\"digite um numero: \"))\n",
+        "b = int(input(\"digite um numero: \"))\n",
+        "q = str(input(\"qual função voce quer usar? (use somente multiplicacao,soma,subtracao e divisao) \"))\n",
+        "if q == \"soma\":\n",
+        "  print(a + b)\n",
+        "elif q == \"subtracao\":\n",
+        "  print(a - b)\n",
+        "elif q == \"multiplicacao\":\n",
+        "  print(a * b)\n",
+        "elif q == \"divisao\":\n",
+        "  print(a / b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZfhHHjC7GA8A",
+        "outputId": "115e436d-89f2-45de-9736-1f323037c1e0"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "|----------CALCULADORA----------|\n",
+            "|                               |\n",
+            "|----------MENU-----------------|\n",
+            "|                                |\n",
+            "opção = 1 - soma                |\n",
+            "opção = 2 - subtração           |\n",
+            "opção = 3 - multiplicação       |\n",
+            "opção = 4 - divisão             |\n",
+            "--------------------------------|\n",
+            "digite um numero: 30\n",
+            "digite um numero: 37\n",
+            "qual função voce quer usar? (use somente multiplicacao,soma,subtracao e divisao) soma\n",
+            "67\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#8.Dia da semana\n",
+        "#Peça um número de 1 a 7 e mostre o dia correspondente (ex: 1 = domingo).\n",
+        "nume = int(input(\"digite um numero entre 1 e 7\"))\n",
+        "if nume > 7:\n",
+        "  print(\"digite um numero valido\")\n",
+        "elif nume == 1:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: domingo. #De noite da uma tristeza \")\n",
+        "elif nume == 2:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: segunda-feira # dia mais chato\")\n",
+        "elif nume == 3:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: terça-feira #nao fede nem cheira\")\n",
+        "elif nume == 4:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: quarta-feira #mais ou menos\")\n",
+        "elif nume == 5:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: quinta-feira #começa a ficar legal\")\n",
+        "elif nume == 6:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: sexta-feira #Sextou\")\n",
+        "else:\n",
+        "  print(f\"o numero {nume} equivale ao dia da semana: sabado #dia de curtir\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Phxd2cBQGhc8",
+        "outputId": "e35ca83c-20d4-497b-ab34-f2206cd5ee8d"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um numero entre 1 e 71\n",
+            "o numero 1 equivale ao dia da semana: domingo. #De noite da uma tristeza \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#9.Ano bissexto\n",
+        "#Solicite um ano e informe se ele é bissexto ou não.\n",
+        "#se for divisível por 4, exceto para anos múltiplos de 100 que não são múltiplos de 400\n",
+        "ano = int(input(\"digite um ano\"))\n",
+        "if ano % 4 == 0:\n",
+        "  print(f\"o ano {ano} é bissexto\")\n",
+        "else:\n",
+        "   print(f\"o ano {ano} não é bissexto\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Or0TDX_FHrPs",
+        "outputId": "6e41f722-8974-4250-cb85-22e4e67e1ab0"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite um ano1945\n",
+            "o ano 1945 não é bissexto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #10.\n",
+        "#Desconto em compras\n",
+        "#Peça o valor de uma compra:\n",
+        "#≥ 100: 10% de desconto\n",
+        "#≥ 50 e < 100: 5% de desconto\n",
+        "#< 50: sem desconto\n",
+        "valor = float(input(\"qual o valor de sua compra? \"))\n",
+        "if valor >= 100:\n",
+        "  desc = valor * 0.1\n",
+        "  prec = valor - desc\n",
+        "  print(f\"sua compra ganhou 10% (muda um pouco) de desconto e ficou {prec}\")\n",
+        "elif valor >= 50 and valor < 100:\n",
+        "  desc = valor * 0.05\n",
+        "  prec = valor - desc\n",
+        "  print(f\"sua compra ganhou 5% (igual a nada) de desconto e ficou {prec}\")\n",
+        "else:\n",
+        "  print(f\"sua compra não ganhou desconto, e ficou {valor}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "72i1huw6JDZS",
+        "outputId": "b508380c-a8fc-426b-d35f-9c692ca4fe02"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "qual o valor de sua compra? 67\n",
+            "sua compra ganhou 5% (igual a nada) de desconto e ficou 63.65\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
